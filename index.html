@@ -1,0 +1,817 @@
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тяни потолок — Все виды натяжных потолков</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat', sans-serif;
+}
+
+body{
+    background:#0f0f14;
+    color:#fff;
+    line-height:1.6;
+}
+
+header{
+    min-height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:56px;
+    font-weight:800;
+    margin-bottom:20px;
+    text-shadow:2px 2px 4px rgba(0,0,0,0.5);
+}
+
+header p{
+    font-size:20px;
+    margin-bottom:30px;
+    opacity:0.9;
+}
+
+.btn{
+    padding:14px 30px;
+    background:linear-gradient(45deg,#ff6b00,#ff9900);
+    border:none;
+    border-radius:30px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+    cursor:pointer;
+    display:inline-block;
+    border:1px solid transparent;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 30px rgba(255,107,0,0.4);
+}
+
+.btn-outline{
+    background:transparent;
+    border:2px solid #ff6b00;
+}
+
+section{
+    padding:80px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:20px;
+    color:#ff6b00;
+}
+
+.section-desc{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 50px;
+    color:#ccc;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1a1a22;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 0 30px rgba(255,107,0,0.1);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 40px rgba(255,107,0,0.3);
+}
+
+.card-img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    color:#ff6b00;
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.price-badge{
+    display:inline-block;
+    background:#ff6b00;
+    color:#fff;
+    padding:5px 15px;
+    border-radius:20px;
+    font-weight:600;
+    margin:10px 0;
+}
+
+.specs{
+    margin:15px 0;
+    padding-left:20px;
+}
+
+.specs li{
+    margin-bottom:5px;
+    color:#ddd;
+}
+
+.profile-grid, .lighting-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.profile-item, .lighting-item{
+    background:#1a1a22;
+    padding:20px;
+    border-radius:10px;
+    border-left:4px solid #ff6b00;
+}
+
+.profile-code{
+    font-size:24px;
+    font-weight:800;
+    color:#ff6b00;
+    margin-bottom:5px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#0a0a0f;
+    font-size:14px;
+    opacity:0.7;
+}
+
+.tab-container{
+    margin-top:40px;
+}
+
+.tab-buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.tab-btn{
+    padding:10px 20px;
+    background:#2a2a35;
+    border:none;
+    color:#fff;
+    cursor:pointer;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.tab-btn.active, .tab-btn:hover{
+    background:#ff6b00;
+}
+
+.tab-content{
+    display:none;
+}
+
+.tab-content.active{
+    display:block;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:34px;
+    }
+    
+    section{
+        padding:40px 15px;
+    }
+}
+
+.lighting-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для черных вставок */
+.card-img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #1a1a22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.black-overlay {
+    background: linear-gradient(145deg, #0a0a0f 0%, #1a1a22 100%);
+    border-bottom: 2px solid #ff6b00;
+}
+
+.overlay-text {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.main-text {
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    color: #ff6b00;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255,107,0,0.3);
+}
+
+.discount-text {
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    background: rgba(255,107,0,0.2);
+    padding: 8px 12px;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 1px solid rgba(255,107,0,0.3);
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.card:hover .black-overlay {
+    background: linear-gradient(145deg, #1a1a22 0%, #0a0a0f 100%);
+}
+
+.card:hover .discount-text {
+    background: rgba(255,107,0,0.3);
+    border-color: #ff6b00;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Тяни потолок</h1>
+    <p>Премиальные натяжные потолки под ключ за 1 день</p>
+    <p style="max-width:600px; margin-bottom:30px;">Более 100 вариантов исполнения: от классики до парящих конструкций с подсветкой</p>
+    <div>
+        <a href="#contact" class="btn">Получить консультацию</a>
+        <a href="#contact" class="btn btn-outline" style="margin-left:15px;">Связаться с нами</a>
+    </div>
+</header>
+
+<!-- Раздел Преимущества -->
+<section>
+    <h2>Наши преимущества</h2>
+    <div class="grid">
+        <!-- Бесплатный замер -->
+        <div class="card">
+            <div class="card-img black-overlay">
+                <div class="overlay-text">
+                    <span class="main-text">БЕСПЛАТНЫЙ ЗАМЕР</span>
+                    <span class="discount-text">ПРИ САМОСТОЯТЕЛЬНОМ ЗАМЕРЕ СКИДКА 10%</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Бесплатный замер</h3>
+                <p>Выезд специалиста в день обращения с образцами материалов</p>
+            </div>
+        </div>
+        
+        <!-- Гарантия 10 лет -->
+        <div class="card">
+            <div class="card-img black-overlay">
+                <div class="overlay-text">
+                    <span class="main-text">ГАРАНТИЯ 10 ЛЕТ</span>
+                    <span class="discount-text">ОФИЦИАЛЬНАЯ ГАРАНТИЯ НА МАТЕРИАЛЫ</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Гарантия 10 лет</h3>
+                <p>Официальная гарантия на материалы от производителей</p>
+            </div>
+        </div>
+        
+        <!-- Монтаж без пыли -->
+        <div class="card">
+            <div class="card-img black-overlay">
+                <div class="overlay-text">
+                    <span class="main-text">МОНТАЖ БЕЗ ПЫЛИ</span>
+                    <span class="discount-text">ЧИСТАЯ И АККУРАТНАЯ РАБОТА</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Монтаж без пыли</h3>
+                <p>Чистая и аккуратная работа с промышленными пылесосами</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Полотна в наличии -->
+<section>
+    <h2>Полотна в наличии</h2>
+    <p class="section-desc">Только сертифицированные материалы от ведущих производителей</p>
+    
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <button class="tab-btn active" onclick="showTab('pvh')">ПВХ полотна</button>
+            <button class="tab-btn" onclick="showTab('tkan')">Тканевые полотна</button>
+            <button class="tab-btn" onclick="showTab('protivopozh')">Противопожарные</button>
+        </div>
+        
+        <!-- ПВХ полотна -->
+        <div id="pvh" class="tab-content active">
+            <div class="grid">
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=f2485d5cddaf0eacc97922dc7ad5c446769e00cd-12653362-images-thumbs&n=13" alt="MSD Classic" class="card-img">
+                    <div class="card-content">
+                        <h3>MSD Classic (Китай)</h3>
+                        <p>Эконом-сегмент с отличным качеством.</p>
+                        <ul class="specs">
+                            <li>✓ Матовые, сатиновые, глянцевые</li>
+                            <li>✓ Ширина до 5,65 м</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=25ec4fb57166dee36318e8487de1522fd2223e20-11407033-images-thumbs&n=13" alt="Bauf" class="card-img">
+                    <div class="card-content">
+                        <h3>Bauf (Германия)</h3>
+                        <p>Премиальное немецкое качество.</p>
+                        <ul class="specs">
+                            <li>✓ Высокая прочность</li>
+                            <li>✓ Идеальная белизна</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Тканевые полотна -->
+        <div id="tkan" class="tab-content">
+            <div class="grid">
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=d9b188df158206f61d6467f2f7866e28_l-12753086-images-thumbs&n=13" alt="Descor" class="card-img">
+                    <div class="card-content">
+                        <h3>Descor (Германия)</h3>
+                        <p>Лучшее соотношение цены и качества среди тканевых потолков.</p>
+                        <ul class="specs">
+                            <li>✓ Экологично, для спален и детских</li>
+                            <li>✓ "Дышащий" материал</li>
+                            <li>✓ Можно красить до 5 раз</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/get-sprav-products/11939409/2a0000018d74b5ab6b9cc777a1175a8a97b2/M_height" alt="Clipso" class="card-img">
+                    <div class="card-content">
+                        <h3>Clipso (Франция)</h3>
+                        <p>Первопроходец тканевых потолков, эталон качества.</p>
+                        <ul class="specs">
+                            <li>✓ Премиальное качество</li>
+                            <li>✓ Фактура "под штукатурку"</li>
+                            <li>✓ Звукопоглощение</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Противопожарные полотна -->
+        <div id="protivopozh" class="tab-content">
+            <div class="grid">
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=e4319cf41a75c7c14e017684bbfd08fdae00cce2-4728221-images-thumbs&n=13" alt="Pongs" class="card-img">
+                    <div class="card-content">
+                        <h3>Pongs (Германия/Китай)</h3>
+                        <p>Немецкое качество.</p>
+                        <ul class="specs">
+                            <li>✓ 3 фактуры, множество цветов</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=3e49c4f8955f300ab74c9633e8edd897_l-16314617-images-thumbs&n=13" alt="Teqtum" class="card-img">
+                    <div class="card-content">
+                        <h3>Teqtum (противопожарные)</h3>
+                        <p>Для мест с высокими требованиями пожаробезопасности.</p>
+                        <ul class="specs">
+                            <li>✓ Не горят, не плавятся</li>
+                            <li>✓ Сертификаты безопасности</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Типы потолков -->
+<section>
+    <h2>Типы потолков</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=0ff7cfa3e7d4d29bcdfd8bbf658c07190e5a545e-10122878-images-thumbs&n=13" alt="Теневой потолок" class="card-img">
+            <div class="card-content">
+                <h3>Теневые потолки</h3>
+                <p>Зазор 5-20 мм между стеной и потолком создает эффект парения.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=652f947013aa9ec05c9413b83063432924548954-8249293-images-thumbs&n=13" alt="Парящий потолок" class="card-img">
+            <div class="card-content">
+                <h3>Парящие потолки</h3>
+                <p>Подсветка по периметру создает ощущение, что потолок висит в воздухе.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=bec3170317e3ac7bdf524c4ff78bfdbb2c0700f3-5878737-images-thumbs&n=13" alt="Двухуровневый потолок" class="card-img">
+            <div class="card-content">
+                <h3>Двухуровневые</h3>
+                <p>Сложные конструкции с перепадами высоты для зонирования.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Профили и системы крепления -->
+<section>
+    <h2>Профили и системы крепления</h2>
+    <p class="section-desc">Выбирайте под ваш дизайн-проект</p>
+
+    <!-- Информационный блок о материалах и брендах -->
+    <div style="text-align: center; margin-bottom: 40px; padding: 25px; background: #1a1a22; border-radius: 15px; border-left: 4px solid #ff6b00;">
+        <p style="font-size: 18px; color: #fff; margin-bottom: 15px;">
+            <span style="color: #ff6b00; font-weight: 800;">✓</span> В наличии профили: 
+            <strong>пластиковые (ПВХ)</strong> и <strong>алюминиевые</strong>
+        </p>
+        <p style="color: #fff; font-size: 16px; margin-bottom: 10px;">
+            <span style="color: #ff6b00; font-weight: 800;">🏭</span> Представленные бренды:
+        </p>
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 10px;">
+            <div style="background: #2a2a35; padding: 8px 20px; border-radius: 30px; border: 1px solid #ff6b00;">
+                <span style="color: #ff6b00; font-weight: 800;">EURO CRAFT</span>
+                <span style="color: #aaa; font-size: 12px; display: block;">(теневые профили)</span>
+            </div>
+            <div style="background: #2a2a35; padding: 8px 20px; border-radius: 30px; border: 1px solid #ff6b00;">
+                <span style="color: #ff6b00; font-weight: 800;">FLEXY</span>
+                <span style="color: #aaa; font-size: 12px; display: block;">(EURO, FLY, SPOT)</span>
+            </div>
+        </div>
+        <p style="color: #aaa; margin-top: 15px; font-size: 14px;">
+            Алюминиевые — для повышенных нагрузок.<br>
+            Пластиковые — экономичный вариант.
+        </p>
+    </div>
+
+    <div class="profile-grid">
+        <!-- Теневой профиль -->
+        <div class="profile-item">
+            <img src="https://avatars.mds.yandex.net/i?id=a68535b81991d150b57cac0951ad455bd40aa479-9865886-images-thumbs&n=13" alt="Теневой профиль" style="width:100%; height:150px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
+            <div class="profile-code">Теневой</div>
+            <h3>Теневой профиль</h3>
+            <p>Зазор 5-9 мм. Доступен в алюминии и пластике. Аналоги: EURO CRAFT, FLEXY EURO.</p>
+        </div>
+        
+        <!-- Разделительный профиль -->
+        <div class="profile-item">
+            <img src="https://avatars.mds.yandex.net/i?id=57d2a147fa677267609c3c005e2fd8a1a6b45e03-12413751-images-thumbs&n=13" alt="Разделительный профиль" style="width:100%; height:150px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
+            <div class="profile-code">Разделительный</div>
+            <h3>SLOTT R / Стыковочный</h3>
+            <p>Для соединения полотен. Аналог: FLEXY EURO 04.</p>
+        </div>
+        
+        <!-- Вентиляционный профиль -->
+        <div class="profile-item">
+            <img src="https://avatars.mds.yandex.net/i?id=74c7ffbf08b6c566497587caebf5dc15a0195df7-5277835-images-thumbs&n=13" alt="Вентиляционный профиль" style="width:100%; height:150px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
+            <div class="profile-code">Вентиляционный</div>
+            <h3>С перфорацией</h3>
+            <p>Устраняет эффект "гуляющего" потолка.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Ниши для штор -->
+<section>
+    <h2>Ниши для штор</h2>
+    <p class="section-desc">Полный комплект: от классических решений до современных с подсветкой</p>
+    
+    <!-- Информация о подсветке -->
+    <div style="text-align: center; margin-bottom: 30px; padding: 15px; background: #1a1a22; border-radius: 50px; border: 1px solid #ff6b00; display: inline-block; margin-left: auto; margin-right: auto; width: auto;">
+        <span style="color: #ff6b00; font-weight: 800;">✨ ВОЗМОЖЕН ВАРИАНТ ПОДСВЕТКИ НИШ</span>
+        <span style="color: #aaa; margin-left: 10px;">(LED-лента)</span>
+    </div>
+
+    <div class="grid">
+        <!-- Существующие ниши -->
+        <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=dfef5df5bd3f05e1698d8f008d4bde2a47c6b87e-7011736-images-thumbs&n=13" alt="Скрытая ниша под шторы" class="card-img">
+            <div class="card-content">
+                <h3>Скрытая ниша под шторы</h3>
+                <p>Эстетичное решение для скрытия карниза.</p>
+                <div class="price-badge" style="background: transparent; border: 1px solid #ff6b00; color: #ff6b00; display: inline-block; padding: 5px 15px; border-radius: 20px; font-weight: 600; margin-top: 10px;">🔦 с подсветкой</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=37c4528ed1cd2b9910a7e18d250f5b52eefe3a20-4580514-images-thumbs&n=13" alt="Ниша с перегибом" class="card-img">
+            <div class="card-content">
+                <h3>Ниша с перегибом через брусок</h3>
+                <p>Для плавного изгиба полотна.</p>
+                <div class="price-badge" style="background: transparent; border: 1px solid #ff6b00; color: #ff6b00; display: inline-block; padding: 5px 15px; border-radius: 20px; font-weight: 600; margin-top: 10px;">🔦 опция подсветки</div>
+            </div>
+        </div>
+        
+        <!-- Ниша из бруска -->
+        <div class="card">
+            <div class="card-img black-overlay">
+                <div class="overlay-text">
+                    <span class="main-text">НИША ИЗ БРУСКА</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Ниша из бруска</h3>
+                <p>Деревянный брусок 50х50 мм, возможен монтаж с подсветкой.</p>
+                <div class="price-badge" style="background: transparent; border: 1px solid #ff6b00; color: #ff6b00; display: inline-block; padding: 5px 15px; border-radius: 20px; font-weight: 600; margin-top: 10px;">🔦 LED подсветка</div>
+            </div>
+        </div>
+        
+        <!-- Ниша БП-40 -->
+        <div class="card">
+            <div class="card-img black-overlay">
+                <div class="overlay-text">
+                    <span class="main-text">НИША БП-40</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Ниша из БП-40</h3>
+                <p>Профиль для ниши шириной 40 мм. Алюминиевая конструкция.</p>
+                <div class="price-badge" style="background: transparent; border: 1px solid #ff6b00; color: #ff6b00; display: inline-block; padding: 5px 15px; border-radius: 20px; font-weight: 600; margin-top: 10px;">🔦 со светом</div>
+            </div>
+        </div>
+        
+        <!-- Профили ПК-14, ПК-15, ПК-12 -->
+        <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=06b47d1e36367e2a6c0d7baffa6d6db51e4bec23-4012375-images-thumbs&n=13" alt="ПК-14" class="card-img">
+            <div class="card-content">
+                <h3>ПК-14 Стеновой багет</h3>
+                <p>Классический алюминиевый профиль.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=dc89cbdc05c16cd9ff1823fa423c27cae2fc8e4b-6605286-images-thumbs&n=13" alt="ПК-15" class="card-img">
+            <div class="card-content">
+                <h3>ПК-15 Потолочный багет</h3>
+                <p>Для крепления к потолку.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=40a44e51f8d98dc6d18f41e69c2ed37add26fd36-12443273-images-thumbs&n=13" alt="ПК-12" class="card-img">
+            <div class="card-content">
+                <h3>ПК-12 Усиленный профиль</h3>
+                <p>Для больших площадей.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Освещение -->
+<section>
+    <h2>Освещение</h2>
+    <p class="section-desc">Любые варианты: от классики до современных световых линий</p>
+    
+    <div class="lighting-grid">
+        <div class="lighting-item">
+            <img src="https://avatars.mds.yandex.net/i?id=425d18c6105a38281ba70a1dac6d3508963f5a0c-3450463-images-thumbs&n=13" alt="Точечные светильники" style="width:100%; height:150px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
+            <h3>Точечные светильники</h3>
+            <p>Встраиваемые LED-светильники, 230В или 12В.</p>
+        </div>
+        
+        <div class="lighting-item">
+            <img src="https://avatars.mds.yandex.net/i?id=c5d6d6ff20cd6bb4981a1e615dae7e2bf6b0bd9a-16188069-images-thumbs&n=13" alt="Накладные споты" style="width:100%; height:150px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
+            <h3>Накладные споты</h3>
+            <p>Поворотные и статичные, для акцентного освещения.</p>
+        </div>
+        
+        <div class="lighting-item">
+            <img src="https://avatars.mds.yandex.net/i?id=be6c63b09ced2fcb0e56a984ccd80256ce8520a1-10244499-images-thumbs&n=13" alt="Шинопроводы" style="width:100%; height:150px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
+            <h3>Шинопроводы</h3>
+            <p>Накладные и встроенные шинопроводы с трековыми светильниками.</p>
+        </div>
+        
+        <div class="lighting-item">
+            <img src="https://avatars.mds.yandex.net/i?id=d0d5f03be79ce3bb47f9c1d4e67d5e3bd49e8164-5029416-images-thumbs&n=13" alt="Световые линии" style="width:100%; height:150px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
+            <h3>Световые линии</h3>
+            <p>Светодиодные линейные светильники, встраиваемые в полотно.</p>
+        </div>
+        
+        <div class="lighting-item">
+            <img src="https://avatars.mds.yandex.net/i?id=17212143012ab865fffdd14c95013db24ec5caf7-10592644-images-thumbs&n=13" alt="Подсветка за полотном" style="width:100%; height:150px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
+            <h3>Подсветка за полотном</h3>
+            <p>Светодиодные ленты RGB или одноцветные. Эффект парящего потолка.</p>
+        </div>
+        
+        <div class="lighting-item">
+            <img src="https://avatars.mds.yandex.net/i?id=1bd047843644abb1d299c993bec074df1032cb2a-4739197-images-thumbs&n=13" alt="Люстры" style="width:100%; height:150px; object-fit:cover; border-radius:8px; margin-bottom:10px;">
+            <h3>Люстры</h3>
+            <p>Подвесные, потолочные. Усиленные закладные под любые люстры.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Электромонтажные работы -->
+<section>
+    <h2>Электромонтажные работы</h2>
+    <p class="section-desc">Профессиональный электромонтаж под ключ.</p>
+    <div class="grid">
+        <div class="card">
+            <div class="card-img black-overlay">
+                <div class="overlay-text">
+                    <span class="main-text">⚡ ПРОКЛАДКА КАБЕЛЯ</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Прокладка кабеля</h3>
+                <p>Открытая и скрытая проводка, замена старой электропроводки.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img black-overlay">
+                <div class="overlay-text">
+                    <span class="main-text">🔌 УСТАНОВКА ЭЛЕКТРОЩИТОВ</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Сборка и монтаж щитов</h3>
+                <p>Установка вводных щитов, автоматов защиты, УЗО.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img black-overlay">
+                <div class="overlay-text">
+                    <span class="main-text">💡 МОНТАЖ ЭЛЕКТРОТОЧЕК</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Розетки и выключатели</h3>
+                <p>Установка и замена розеток, выключателей, подключение техники.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Водоотведение и канализация + теплые полы -->
+<section>
+    <h2>Водоотведение и канализация</h2>
+    <p class="section-desc">Монтаж систем водоснабжения, канализации и отопления.</p>
+    <div class="grid">
+        <div class="card">
+            <div class="card-img black-overlay">
+                <div class="overlay-text">
+                    <span class="main-text">🚰 МОНТАЖ ТРУБ</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Монтаж труб</h3>
+                <p>Прокладка труб водоснабжения и канализации любой сложности.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img black-overlay">
+                <div class="overlay-text">
+                    <span class="main-text">🛁 УСТАНОВКА САНТЕХНИКИ</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Установка сантехники</h3>
+                <p>Подключение унитазов, раковин, ванн, душевых кабин.</p>
+            </div>
+        </div>
+        <!-- Контурные теплые полы -->
+        <div class="card">
+            <div class="card-img black-overlay">
+                <div class="overlay-text">
+                    <span class="main-text">🌡️ КОНТУРНЫЕ ТЕПЛЫЕ ПОЛЫ</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Контурные теплые полы</h3>
+                <p>Монтаж водяных и электрических теплых полов.</p>
+                <ul class="specs" style="margin-top: 10px;">
+                    <li>✓ Водяные теплые полы</li>
+                    <li>✓ Электрические (кабель, маты)</li>
+                    <li>✓ Под любые покрытия</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Бесплатная консультация -->
+<section id="consultation">
+    <h2>Бесплатная консультация</h2>
+    <p class="section-desc">Предварительный расчет стоимости по телефону</p>
+    
+    <div style="max-width: 800px; margin: 0 auto; background: linear-gradient(145deg, #1a1a22 0%, #0f0f14 100%); padding: 40px; border-radius: 30px; text-align: center; border: 2px solid #ff6b00; box-shadow: 0 0 40px rgba(255,107,0,0.2);">
+        
+        <div style="font-size: 60px; color: #ff6b00; margin-bottom: 20px;">📞</div>
+        
+        <h3 style="font-size: 28px; color: #fff; margin-bottom: 15px;">Нужна помощь с выбором?</h3>
+        
+        <p style="font-size: 18px; color: #ccc; max-width: 600px; margin: 0 auto 25px;">
+            Позвоните нам — мы бесплатно проконсультируем, поможем с предварительным расчетом и ответим на все вопросы
+        </p>
+        
+        <a href="tel:+79130606373" style="font-size: 36px; color: #ff6b00; text-decoration: none; font-weight: 800; display: inline-block; padding: 15px 30px; background: #2a2a35; border-radius: 60px; margin-bottom: 20px; border: 1px solid #ff6b00; transition: 0.3s;">
+            +7 913 060 6373
+        </a>
+        
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px;">
+            <div style="color: #aaa;"><span style="color: #ff6b00; font-weight: 800;">✓</span> Бесплатно</div>
+            <div style="color: #aaa;"><span style="color: #ff6b00; font-weight: 800;">✓</span> 5-10 минут</div>
+            <div style="color: #aaa;"><span style="color: #ff6b00; font-weight: 800;">✓</span> Предварительный расчет</div>
+        </div>
+        
+        <div style="margin-top: 30px;">
+            <a href="tel:+79130606373" class="btn" style="font-size: 20px; padding: 15px 40px;">Позвонить сейчас</a>
+        </div>
+        
+        <p style="color: #888; margin-top: 25px; font-size: 14px;">Звоните с 9:00 до 21:00, без выходных</p>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section id="contact">
+    <h2>Оставить заявку</h2>
+    
+    <div style="max-width: 600px; margin: 0 auto; background: #1a1a22; padding: 50px 40px; border-radius: 20px; text-align: center; border-left: 4px solid #ff6b00;">
+        
+        <div style="margin-bottom: 30px;">
+            <div style="font-size: 18px; color: #ff6b00; margin-bottom: 10px; font-weight: 600;">📞 ПО ТЕЛЕФОНУ</div>
+            <a href="tel:+79130606373" style="font-size: 32px; color: #fff; text-decoration: none; font-weight: 800; display: inline-block; padding: 10px 20px; background: #2a2a35; border-radius: 50px;">+7 913 060 6373</a>
+        </div>
+        
+        <div style="width: 100px; height: 2px; background: linear-gradient(90deg, transparent, #ff6b00, transparent); margin: 30px auto;"></div>
+        
+        <div>
+            <div style="font-size: 18px; color: #ff6b00; margin-bottom: 10px; font-weight: 600;">✉️ ПО ПОЧТЕ</div>
+            <a href="mailto:aleksandrlegostaev0110@gmail.com" style="font-size: 20px; color: #fff; text-decoration: none; font-weight: 600; word-break: break-all; display: inline-block; padding: 10px 20px; background: #2a2a35; border-radius: 50px;">aleksandrlegostaev0110@gmail.com</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Тяни потолок — Все виды натяжных потолков</p>
+    <p>Монтаж любых конструкций: теневые, парящие, двухуровневые, с нишами для штор</p>
+</footer>
+
+<script>
+// Табы
+function showTab(tabId) {
+    document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove('active');
+    });
+    
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    
+    document.getElementById(tabId).classList.add('active');
+    event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>
